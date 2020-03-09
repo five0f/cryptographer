@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Cryptographer</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <main>
+    <textarea id="source" placeholder="Исходный текст"></textarea>
+    <div>
+      <button onclick="handleEncryptCaesarClick()">Зашифровать (Цезарь)</button>
+      <button onclick="handleDecryptCaesarClick()">Расшифровать (Цезарь)</button>
+      <input id="param" type="text" placeholder="Сдвиг/ключ">
+      <button onclick="handleEncryptVigenereClick()">Зашифровать (Виженер)</button>
+      <button onclick="handleDecryptVigenereClick()">Расшифровать (Виженер)</button>  
+    </div>
+  <textarea id="result" placeholder="Результат"></textarea>
+  </main>
+</body>
+</html>
